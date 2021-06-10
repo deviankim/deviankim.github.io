@@ -12,9 +12,11 @@ dependencies {
 
 ##### aar
 ```
+
 repositories { 
   flatDir { 
     dirs 'libs' 
+    // Copy aar files to 'app/libs' folder.
   } 
 }
 
