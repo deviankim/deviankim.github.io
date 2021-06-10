@@ -1,37 +1,34 @@
-## Welcome to GitHub Pages
+라이브러리 배포시 maven / aar 의 차이점에 대해 알아보자.
 
-You can use the [editor on GitHub](https://github.com/deviankim/deviankim.github.io/edit/main/README.md) to maintain and preview the content for your website in Markdown files.
+# maven vs aar
 
-Whenever you commit to this repository, GitHub Pages will run [Jekyll](https://jekyllrb.com/) to rebuild the pages in your site, from the content in your Markdown files.
+## implementation
+- maven
+```
+dependencies {
+  implementation "com.rsupport.android.remotecall.sdk:remotecall-sdk-core:7.0.2.14"
+}
+```
+- aar
+```
+repositories { 
+  flatDir { 
+    dirs 'libs' 
+  } 
+}
 
-### Markdown
-
-Markdown is a lightweight and easy-to-use syntax for styling your writing. It includes conventions for
-
-```markdown
-Syntax highlighted code block
-
-# Header 1
-## Header 2
-### Header 3
-
-- Bulleted
-- List
-
-1. Numbered
-2. List
-
-**Bold** and _Italic_ and `Code` text
-
-[Link](url) and ![Image](src)
+dependencies {
+  implementation name: "remotecall-core-7.0.2.14", ext: 'aar'
+}
 ```
 
-For more details see [GitHub Flavored Markdown](https://guides.github.com/features/mastering-markdown/).
+## additional dependencies
+- maven
+```
+nothing...
+```
+- aar
+```
+all dependencies using in library module.
+```
 
-### Jekyll Themes
-
-Your Pages site will use the layout and styles from the Jekyll theme you have selected in your [repository settings](https://github.com/deviankim/deviankim.github.io/settings/pages). The name of this theme is saved in the Jekyll `_config.yml` configuration file.
-
-### Support or Contact
-
-Having trouble with Pages? Check out our [documentation](https://docs.github.com/categories/github-pages-basics/) or [contact support](https://support.github.com/contact) and we’ll help you sort it out.
