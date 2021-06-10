@@ -3,14 +3,14 @@
 # maven vs aar
 
 ## implementation
-- maven
+### maven
 ```
 dependencies {
   implementation "com.rsupport.android.remotecall.sdk:remotecall-sdk-core:7.0.2.14"
 }
 ```
 
-- aar
+### aar
 ```
 repositories { 
   flatDir { 
@@ -25,12 +25,12 @@ dependencies {
 
 ## additional dependencies
 
-- maven
+### maven
 ```
 nothing...
 ```
 
-- aar
+### aar
 ```
 all dependencies using in library module.
 ```
