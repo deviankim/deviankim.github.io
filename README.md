@@ -2,7 +2,7 @@
 
 # maven vs aar
 
-## implementation
+## required dependencies
 ##### maven
 ```
 dependencies {
