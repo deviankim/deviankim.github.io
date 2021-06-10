@@ -9,7 +9,9 @@ dependencies {
   implementation "com.rsupport.android.remotecall.sdk:remotecall-sdk-core:7.0.2.14"
 }
 ```
+
 - aar
+- 
 ```
 repositories { 
   flatDir { 
@@ -23,10 +25,12 @@ dependencies {
 ```
 
 ## additional dependencies
+
 - maven
 ```
 nothing...
 ```
+
 - aar
 ```
 all dependencies using in library module.
