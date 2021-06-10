@@ -11,7 +11,6 @@ dependencies {
 ```
 
 - aar
-- 
 ```
 repositories { 
   flatDir { 
